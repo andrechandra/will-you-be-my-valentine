@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      sans: ["Poppins", "system-ui", "sans-serif"],
+    },
   },
   plugins: [],
 } satisfies Config;
