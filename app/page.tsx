@@ -54,7 +54,7 @@ export default function ValentineProposal() {
                   className="bg-green-500 text-white font-bold py-3 px-6 rounded-md text-xl shadow-2xl"
                   onClick={() => setShowRSVP(true)}
                 >
-                  Yes, I'd love to! 💖
+                  Yes, I&apos;d love to! 💖
                 </motion.button>
 
                 <motion.button
@@ -133,7 +133,7 @@ function RSVPInvitation() {
     <div className="bg-white rounded-lg shadow-lg p-1 w-full max-w-md mx-auto text-center">
       <div className="border-4 border-pink-300 rounded-lg p-4 sm:p-6 relative">
         <h2 className="text-2xl sm:text-3xl font-serif text-red-600 mb-4">
-          You're Invited!
+          You&apos;re Invited!
         </h2>
         <p className="text-lg sm:text-xl text-gray-700 mb-6">
           Makan malam yukkkkk
