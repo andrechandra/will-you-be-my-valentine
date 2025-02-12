@@ -129,6 +129,8 @@ function AnimatedText({
 }
 
 function RSVPInvitation() {
+  const [isVisible, setIsVisible] = useState(false)
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-1 w-full max-w-md mx-auto text-center">
       <div className="border-4 border-pink-300 rounded-lg p-4 sm:p-6 relative">
@@ -145,8 +147,18 @@ function RSVPInvitation() {
           <p className="text-base sm:text-lg text-gray-600">
             <span className="font-semibold">Time:</span> 8:00 PM
           </p>
-          <p className="text-base sm:text-lg text-gray-600">
-            <span className="font-semibold">Location:</span> dimana yaaaa
+          <p
+            onClick={() => setIsVisible(!isVisible)}
+            className="text-base sm:text-lg text-gray-600 cursor-pointer"
+          >
+            <span className="font-semibold">Location:</span>{' '}
+            {isVisible ? (
+              <span>Two Stories Resto & Lounge</span>
+            ) : (
+              <span className="text-gray-500 hover:underline">
+                Click to reveal
+              </span>
+            )}
           </p>
         </div>
         <motion.div
